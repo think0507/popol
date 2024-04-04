@@ -1,0 +1,55 @@
+/********** 태그 **********/
+body{
+    margin : 60px;
+    width: 60%;
+}
+ul{
+    padding-inline-start: 15px;
+}
+h1{
+    font-size: 3em;
+    color: dodgerblue;
+}
+h2{
+    font-size: 2em;
+    color: dodgerblue;
+}
+h3{
+    font-size: 1em;
+    color: dodgerblue;
+}
+/********** 태그 **********/
+
+
+/********** 폰트 **********/
+.leftContent{
+    width: 20%;
+}
+.rightContent{
+}
+.grayText{
+    color: gray;
+}
+.blackText{
+    font-weight: bold;
+    color: black;
+}
+/********** 폰트 **********/
+
+
+/********** 컨테이너 **********/
+.headContainer{
+    display : flex;
+}
+.educationContainer, .experienceContainer,
+.skillsContainer1, .skillsContainer2, .skillsContainer3,
+.careerContainer1, .careerContainer2
+, .awardsContainer1, .awardsContainer2{
+    display : flex;
+}
+.skillsContainer1, .skillsContainer2, .skillsContainer3,
+.careerContainer1, .careerContainer2,
+.awardsContainer1, .awardsContainer2{
+    border-bottom: 1px solid gray;
+}
+/********** 컨테이너 **********/
