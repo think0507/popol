@@ -58,11 +58,14 @@ h3 {
     justify-content: space-between; /* 내용을 공간에 균등하게 분배 */
     align-items: baseline; /* 아이템들을 베이스라인에 맞춤 */
 }
-
+.educationContainer{
+    padding-bottom: 2em; /* 하단 경계선 위 여백 추가 */
+    border-bottom: 1px solid lightgray;
+}
 .skillsContainer1, .skillsContainer2, .skillsContainer3,
 .careerContainer1, .careerContainer2,
 .awardsContainer1, .awardsContainer2 {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
     padding-bottom: 1em; /* 하단 경계선 위 여백 추가 */
 }
 
@@ -107,6 +110,42 @@ h3 {
 .projectDate, .projectTitle, .projectLanguages, .languageIcon {
     margin-bottom: 5px; /* 요소들 사이의 여백 조정 */
 }
+
+/*********아이콘 CSS 시작*********/
+
+.icon {
+    border-radius: 10px;    /* 테두리를 둥글게 설정 (10px) */
+    padding: 10px;         /* 내부 여백 설정 */
+    display: inline-flex;  /* 내용물이 가로로 정렬되도록 설정 */
+    align-items: center;   /* 내용물이 수직 가운데 정렬되도록 설정 */
+    margin: 5px;           /* 아이콘 사이의 간격 설정 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+}
+.icon i {
+    margin-right: 8px; /* 아이콘과 텍스트 사이의 간격 설정 */
+}
+.blueicon{
+    background-color: aliceblue; /* 배경색 설정 */
+}
+.yellowicon{
+    background-color: lightyellow; /* 배경색 설정 */
+}
+.redicon{
+    background-color: mistyrose; /* 배경색 설정 */
+}
+.greenicon{
+    background-color: lightcyan; /* 배경색 설정 */
+}
+.orangeicon{
+    background-color: moccasin; /* 배경색 설정 */
+}
+
+/***********아이콘 CSS 끝***********8*/
+
+
+
+
+
 
 /* 반응형 미디어 쿼리 */
 @media (max-width: 768px) {
