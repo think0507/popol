@@ -58,7 +58,7 @@ h3 {
     justify-content: space-between; /* 내용을 공간에 균등하게 분배 */
     align-items: baseline; /* 아이템들을 베이스라인에 맞춤 */
 }
-.educationContainer{
+.educationContainer {
     padding-bottom: 2em; /* 하단 경계선 위 여백 추가 */
     border-bottom: 1px solid lightgray;
 }
@@ -77,7 +77,7 @@ h3 {
     justify-content: flex-start; /* 왼쪽 정렬 */
     gap: 20px; /* 항목 사이 간격 */
 }
-.teamProjectContainer1, .teamProjectContainer2{
+.teamProjectContainer1, .teamProjectContainer2 {
     display: flex;
 }
 
@@ -96,7 +96,6 @@ h3 {
     margin: 10px;
 }
 
-
 .projectImage {
     max-width: 100%; /* 이미지가 컨테이너 너비를 초과하지 않도록 함 */
     height: auto; /* 이미지의 원래 비율 유지 */
@@ -112,7 +111,6 @@ h3 {
 }
 
 /*********아이콘 CSS 시작*********/
-
 .icon {
     border-radius: 10px;    /* 테두리를 둥글게 설정 (10px) */
     padding: 10px;         /* 내부 여백 설정 */
@@ -124,28 +122,23 @@ h3 {
 .icon i {
     margin-right: 8px; /* 아이콘과 텍스트 사이의 간격 설정 */
 }
-.blueicon{
+.blueicon {
     background-color: aliceblue; /* 배경색 설정 */
 }
-.yellowicon{
+.yellowicon {
     background-color: lightyellow; /* 배경색 설정 */
 }
-.redicon{
+.redicon {
     background-color: mistyrose; /* 배경색 설정 */
 }
-.greenicon{
+.greenicon {
     background-color: lightcyan; /* 배경색 설정 */
 }
-.orangeicon{
+.orangeicon {
     background-color: moccasin; /* 배경색 설정 */
 }
 
-/***********아이콘 CSS 끝***********8*/
-
-
-
-
-
+/***********아이콘 CSS 끝***********/
 
 /* 반응형 미디어 쿼리 */
 @media (max-width: 768px) {
