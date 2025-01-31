@@ -1,203 +1,197 @@
-/* 기본 스타일 */
+/* ========== 1) 기본 리셋 + 스무스 스크롤 ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* a[href="#섹션ID"] 클릭 시 부드럽게 이동 */
+}
+
 body {
-    margin: 60px auto;
-    width: 60%;
+    /* Pretendard 폰트 우선 사용, 혹시 로드 안 되면 sans-serif fallback */
     font-family: 'Pretendard', sans-serif;
-    font-size: 18px; /* 기본 폰트 크기를 키움 */
-    line-height: 2em;
+    background-color: #f7f7f7;
+    line-height: 1.8;
 }
 
-ul {
-    list-style: none; /* 기본 리스트 스타일 제거 */
-    padding-left: 0; /* 리스트 아이템 왼쪽 정렬 */
+/* ========== 2) 전체 레이아웃 ========== */
+.container {
+    display: flex;
+    min-height: 100vh;
 }
 
-h1, h2, h3 {
-    color: dodgerblue;
+/* 왼쪽 사이드바 */
+.sidebar {
+    width: 220px;
+    background: linear-gradient(180deg, #5f2eea 0%, #a464f1 100%);
+    padding-top: 40px;
+    position: sticky; /* 스크롤해도 사이드바 고정 */
+    top: 0;
+    height: 100vh;
+    overflow-y: auto; /* 내용이 길면 자체 스크롤 */
 }
 
-h1 {
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.sidebar li a {
+    color: #fff;
+    font-size: 1.1rem;
     font-weight: 500;
-    font-size: 5em; /* 폰트 크기를 키움 */
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+.sidebar li a:hover {
+    background-color: rgba(255,255,255,0.2);
 }
 
-h2 {
-    font-weight: 400;
-    font-size: 4em; /* 폰트 크기를 키움 */
-    margin-top: 1em; /* 섹션 간 여백 추가 */
+/* 오른쪽 메인 영역 */
+.mainContent {
+    flex: 1;
+    padding: 0 20px;
+    /* 가운데로 제한하고 싶다면, 다음처럼 가능:
+     * max-width: 800px; margin: 0 auto;
+     */
 }
 
-h3 {
-    font-weight: 400;
-    font-size: 22px; /* 폰트 크기를 키움 */
+/* ========== 3) 섹션 공통 스타일 ========== */
+.contentSection {
+    padding: 60px 0;              /* 위/아래 여백 */
+    border-bottom: 1px solid #eee;/* 구분선 */
+    max-width: 800px;             /* 가로폭 제한 */
+    margin: 0 auto;               /* 수평 가운데 정렬 */
+    text-align: left;             /* 텍스트 왼쪽 정렬 (필요시 center로 변경 가능) */
 }
 
-/* 텍스트 스타일 */
-.leftContent {
-    width: 20%;
-    float: left; /* 내용을 왼쪽으로 정렬 */
-    font-size: 1.2em; /* 폰트 크기를 키움 */
+.contentSection:last-child {
+    border-bottom: none; /* 마지막 섹션은 구분선 제거 */
 }
 
-.rightContent {
-    width: 75%;
-    float: right; /* 내용을 오른쪽으로 정렬 */
-    font-size: 1.2em; /* 폰트 크기를 키움 */
+/* 제목(h1) 스타일 */
+.contentSection h1 {
+    font-size: 2.2rem;
+    color: #5f2eea;   /* 진한 보라톤 */
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-.grayText {
-    color: gray;
+/* 수평선(hr) 스타일 */
+.contentSection hr {
+    margin-bottom: 20px;
+    border: none;
+    border-top: 1px solid #ccc;
 }
 
-.blackText {
-    font-weight: bold;
-    color: black;
+/* 부제목(h2) 스타일 */
+.contentSection h2 {
+    font-size: 1.6rem;
+    color: #7c3aed;   /* 조금 더 연한 보라 */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
-/* 컨테이너 스타일 */
-.headContainer,
-.educationContainer,
-.skillsContainer1, .skillsContainer2, .skillsContainer3,
-.careerContainer1, .careerContainer2,
-.awardsContainer1, .awardsContainer2 {
-    display: flex;
-    flex-wrap: wrap; /* 화면 크기에 따라 내용을 줄바꿈 */
-    justify-content: space-between; /* 내용을 공간에 균등하게 분배 */
-    align-items: baseline; /* 아이템들을 베이스라인에 맞춤 */
+/* 만약 h3, h4가 필요한 경우 추가 */
+.contentSection h3 {
+    font-size: 1.4rem;
+    color: #9b75f7;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
-.educationContainer {
-    padding-bottom: 2em; /* 하단 경계선 위 여백 추가 */
-    border-bottom: 1px solid lightgray;
-}
-.skillsContainer1, .skillsContainer2, .skillsContainer3,
-.careerContainer1, .careerContainer2,
-.awardsContainer1, .awardsContainer2 {
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 1em; /* 하단 경계선 위 여백 추가 */
+.contentSection h4 {
+    font-size: 1.2rem;
+    color: #9b75f7;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 500;
 }
 
-/* 프로젝트 그리드 스타일 */
-.projectsContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; /* 줄바꿈 허용 */
-    justify-content: flex-start; /* 왼쪽 정렬 */
-    gap: 20px; /* 항목 사이 간격 */
-}
-.teamprojectsContainer{
-    display : flex;
-    flex-wrap: wrap; /* 줄바꿈 허용 */
-}
-.soloProjectContainer{
-    display : flex;
-    flex-wrap: wrap; /* 줄바꿈 허용 */
-}
-.projectItem {
-    display: flex;
-    flex-direction: column; /* 내용을 세로로 쌓음 */
-    align-items: center; /* 모든 내용을 중앙 정렬 */
-    width: 300px;
-    min-height: 450px;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    text-decoration: none; /* 링크 밑줄 제거 */
-    color: inherit; /* 상위 요소로부터 색상 상속 */
-    overflow: hidden; /* 내용이 넘치지 않도록 처리 */
-    margin: 10px;
+/* 본문 텍스트(p, li 등) */
+.contentSection p, .contentSection li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
-.projectImage {
-    width:200px;
-    height:200px;
-    object-fit: fill;
+.contentSection ul {
+    list-style: disc inside;
+    margin-left: 20px;
 }
 
-.projectInfo {
-    padding: 0 5px;
+/* ========== 4) 특정 섹션 중앙정렬 (세로+가로) ========== */
+.centerScreen {
+    display: flex;            /* Flex로 자식 정렬 */
+    flex-direction: column;   /* 수직 배치 */
+    justify-content: center;  /* 수직 방향 중앙 정렬 (column 상태라) */
+    align-items: center;      /* 수평 방향 중앙 정렬 */
+    height: 100vh;            /* 화면 높이만큼 꽉 채워서 중앙 배치 */
+    text-align: center;       /* 글도 가운데 정렬 */
+    border-bottom: 1px solid #eee;
 }
 
-.projectLanguages, .languageIcon {
-    margin-bottom: 5px; /* 요소들 사이의 여백 조정 */
-    font-size: 1.1em; /* 폰트 크기를 키움 */
-}
-.projectDate, .projectTitle {
-    margin-bottom: 5px; /* 요소들 사이의 여백 조정 */
-    font-size: 1.1em; /* 폰트 크기를 키움 */
-    text-align: center; /* 텍스트 가운데 정렬 */
-    width: 100%; /* 부모 요소의 너비를 모두 사용 */
-    display: flex;
-    justify-content: center; /* Flexbox를 사용하여 중앙 정렬 */
-}
-
-/*********아이콘 CSS 시작*********/
-.icon {
-    border-radius: 10px;    /* 테두리를 둥글게 설정 (10px) */
-    padding: 10px;         /* 내부 여백 설정 */
-    display: inline-flex;  /* 내용물이 가로로 정렬되도록 설정 */
-    align-items: center;   /* 내용물이 수직 가운데 정렬되도록 설정 */
-    margin: 5px;           /* 아이콘 사이의 간격 설정 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
-}
-.icon i {
-    margin-right: 8px; /* 아이콘과 텍스트 사이의 간격 설정 */
-}
-.blueicon {
-    background-color: aliceblue; /* 배경색 설정 */
-}
-.yellowicon {
-    background-color: lightyellow; /* 배경색 설정 */
-}
-.redicon {
-    background-color: mistyrose; /* 배경색 설정 */
-}
-.greenicon {
-    background-color: lightcyan; /* 배경색 설정 */
-}
-.orangeicon {
-    background-color: moccasin; /* 배경색 설정 */
+.centerLeft {
+    display: flex;            /* Flex 레이아웃 */
+    flex-direction: column;   /* 세로 방향으로 요소 배치 */
+    justify-content: center;  /* 세로(수직) 중앙 정렬 */
+    align-items: flex-start;  /* 가로(수평) 왼쪽 정렬 */
+    height: 100vh;            /* 화면 높이 꽉 채움 */
+    text-align: left;         /* 텍스트 왼쪽 정렬 */
+    border-bottom: 1px solid #eee;
+    padding-left: 20px;       /* 왼쪽 여백을 줘서 너무 붙지 않게 */
+    box-sizing: border-box;   /* 혹시 몰라서 박스 사이징 지정 */
 }
 
-/***********아이콘 CSS 끝***********/
 
-/* 반응형 미디어 쿼리 */
+/* centerScreen 안의 h1, p 등 기본 수직 간격 조정 */
+.centerScreen h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.centerScreen hr {
+    margin: 20px 0;
+}
+
+/* 라운드 이미지를 적용한 .round-img */
+.round-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* ========== 5) 반응형 ========== */
 @media (max-width: 768px) {
-    body {
-        width: 95%;
-        margin: 20px auto;
-        font-size: 16px; /* 모바일 뷰에서 기본 폰트 크기 조정 */
+    .container {
+        flex-direction: column; /* 사이드바 위로 */
     }
-
-    .leftContent,
-    .rightContent {
+    .sidebar {
+        position: static;
         width: 100%;
-        float: none;
-        margin-bottom: 10px;
+        height: auto;
+        overflow-y: visible;
     }
-
-    .projectItem {
-        width: 300px; /* 모바일 뷰에서 너비를 100%로 조정 */
+    .mainContent {
+        padding: 20px;
     }
-
-    h1 {
-        font-size: 3em;
+    .contentSection {
+        padding: 40px 0;
+        max-width: 95%;
     }
-
-    h2 {
-        font-size: 2em;
-    }
-}
-
-@media (max-width: 480px) {
-    .projectItem {
-        width: 100%; /* 화면이 매우 작을 때 항목이 한 줄에 하나씩 보이도록 조정 */
-    }
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 1.8em;
+    .centerScreen {
+        height: auto;  /* 모바일에서 100vh 대신 가변 */
+        min-height: 100vh;
     }
 }

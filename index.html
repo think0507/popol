@@ -1,502 +1,122 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="./style.css" rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Single Page Portfolio with Smooth Scroll & Centered Sections</title>
+    <!-- Pretendard 폰트 CDN -->
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" type="text/css">
+    <!-- 외부 CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1 class="title">About Me</h1>
-<div class="headContainer">
-    <div class="infoContainer">
-        <p>안녕하세요. 클라우드 엔지니어를 꿈꾸고 있는 학생 백동렬 입니다.</p>
-        <p>한줄의 코드도 정확히 알고 넘어가자는 마인드로 공부했습니다.</p>
-        <p>아직 부족하지만, 항상 노력하겠습니다!</p>
-    </div>
-    <div class="contactContainer">
-        <h2>contact</h2>
-        <div class="contactDetails">
-            <h3>Email</h3>
-            <p>think0507@naver.com</p>
-            <h3>Instagram</h3>
-            <p>d_ryeol57</p>
-            <h3>Github</h3>
-            <p>https://github.com/think0507</p>
-            <h3>Notion</h3>
-            <p>https://www.notion.so/63f861c017594f2e889792d289216d39</p>
-        </div>
-    </div>
-</div>
-<h2>Education</h2>
-<div class="educationContainer">
-    <div class="leftContent">
-        <div class="grayText">
-            2019~
-        </div>
-        <div class="blackText">
-            삼육대학교 컴퓨터공학과
-        </div>
-    </div>
-    <div class="rightContent">
-        <p>컴퓨터 공학과<br>3.7 / 4.5</p>
-    </div>
-</div>
 
-<h2>Skills</h2>
-<div class="skillsContainer">
-    <div class="skillsContainer1">
-        <div class="leftContent">
-            <div class="blackText">
-                Backend
-            </div>
-        </div>
-        <div class="rightContent">
-            <ul>
-                <li>
-                    <div class="icon redicon">
-                        <i class="fa-brands fa-java"></i> Java
-                    </div>
-                    <div class="icon redicon">
-                        <i class="fa-brands fa-python"></i> Python
-                    </div>
-                    <div class="icon redicon">
-                        <i class="fa-solid fa-leaf"></i> Spring
-                    </div>
-                    <div class="icon blueicon">
-                        <i class="fa-solid fa-database"></i> MySQL
-                    </div>
-                    <div class="icon yellowicon">
-                        <i class="fa-brands fa-aws"></i> AWS RDS
-                    </div>
-                    <div class="icon yellowicon">
-                        <i class="fa-brands fa-docker"></i> Docker
-                    </div>
-                    <div class="icon yellowicon">
-                        <i class="fa-brands fa-aws"></i> AWS EC2
-                    </div>
-                    <div class="icon yellowicon">
-                        <i class="fa-brands fa-aws"></i> AWS S3
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="skillsContainer2">
-        <div class="leftContent">
-            <div class="blackText">
-                Frontend
-            </div>
-        </div>
-        <div class="rightContent">
-            <ul>
-                <li>
-                    <div class="icon greenicon">
-                        <i class="fa-brands fa-html5"></i> HTML
-                    </div>
-                    <div class="icon greenicon">
-                        <i class="fa-brands fa-css3-alt"></i> CSS
-                    </div>
-                    <div class="icon greenicon">
-                        <i class="fa-brands fa-js"></i> Javascript (ES6+)
-                    </div>
-                    <div class="icon greenicon">
-                        <i class="fa-brands fa-react"></i> React
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="skillsContainer3">
-        <div class="leftContent">
-            <div class="blackText">
-                Tools
-            </div>
-        </div>
-        <div class="rightContent">
-            <ul>
-                <li>
-                    <div class="icon orangeicon">
-                        <i class="fa-brands fa-git"></i> Git
-                    </div>
-                    <div class="icon orangeicon">
-                        <i class="fa-brands fa-github"></i> Github
-                    </div>
-                    <div class="icon orangeicon">
-                        <i class="fa-brands fa-slack"></i> Slack
-                    </div>
-                    <div class="icon orangeicon">
-                        <i class="fa-solid fa-n"></i> Notion
-                    </div>
-                    <div class="icon orangeicon">
-                        <i class="fa-solid fa-j"></i> IntelliJ
-                    </div>
-                    <div class="icon orangeicon">
-                        <i class="fa-solid fa-w"></i> WebStorm
-                    </div>
-                    <div class="icon orangeicon">
-                        <i class="fa-solid fa-p"></i> PostMan
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<h2>💻 CAREER</h2>
-<div class="careerContainer">
-    <div class="careerContainer1">
-        <div class="leftContent">
-            <div class="grayText">
-                2024.03 ~ 2024.06
-            </div>
-            <div class="blackText">
-                에이아이톡
-            </div>
-            <div class="grayText">
-                산학연계
-            </div>
-        </div>
-        <div class="rightContent">
-            <p>교내 산학연계 프로그램을 통해 SI 회사인 에이아이톡과 4개월간 프로젝트를 진행했습니다.<br>
-                멘토링을 통해, 현직에서 협업을 하는 것에 대해 배웠고,<br>
-                LLM, RAG등 챗봇관련 기술들에 대해서 공부하고, 개발을 진행했습니다.
+<div class="container">
+    <!-- 왼쪽 사이드바 -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#career">CAREER</a></li>
+            <li><a href="#awards">AWARDS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#others">OTHERS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main class="mainContent">
+
+        <!-- (1) ABOUT 섹션 (세로/가로 중앙정렬 적용) -->
+        <section id="about" class="contentSection centerScreen">
+            <h1>ABOUT ME</h1>
+            <img class="round-img" src="img/profile.png" alt="" style="width:240px; height: 240px;">
+            <h1>“하나를 하더라도 완벽하게”</h1>
+            <p>
+                안녕하세요,<strong>철저함과 끊임없는 학습 의지로</strong> 성장해온 클라우드 엔지니어 <strong>백동렬</strong>입니다.<br>
+                쌓아온 경험과 실전 경험을 바탕으로 다양한 도전에 당당히 맞서며, 항상 최고의 결과를 만들어내겠습니다.<br>
+                앞으로도 발전을 멈추지 않고, 업계에서 신뢰받는 클라우드 엔지니어로 자리매김하겠습니다.
             </p>
-        </div>
-    </div>
-    <div class="careerContainer2">
-        <div class="leftContent">
-            <div class="grayText">
-                2024.01 ~ 2024.09
+        </section>
+
+        <!-- (2) EDUCATION (일반 섹션, 수직 스크롤) -->
+        <section id="education" class="contentSection centerLeft">
+            <h1>EDUCATION</h1>
+            <hr>
+            <div>
+                <p><strong>삼육대학교 컴퓨터공학과 (2019~ )</strong></p>
+                <p>- 전공 GPA: 3.7 / 4.5</p>
             </div>
-            <div class="blackText">
-                KDT
-            </div>
-            <div class="grayText">
-                수강생
-            </div>
-        </div>
-        <div class="rightContent">
-            <p>고용노동부 주관의 K-Digital Training 과정을 9개월동안 수강했습니다.<br>
-                그 과정에서 자바, 깃, 도커, AWS, 스프링 부트, REACT에 대해 배웠습니다.<br>
-                단순하게 빠른 취업이 목표가 아닌, 긴 시간동안 차근차근 과정을 진행하면서 기술의 활용에 자신감이 붙었습니다.<br>
-                또한, KDT과정 중 실시간 음성채팅관련 프로젝트를 진행했습니다.
-            </p>
-            <div class="blackText">
-                기능추가
-            </div>
-            <p>설계, 프론트, 백엔드 모두 관여했습니다.</p>
+        </section>
+
+        <!-- (3) CAREER (일반 섹션) -->
+        <section id="career" class="contentSection">
+            <h1>CAREER</h1>
+            <hr>
+            <h2>에이아이톡 (산학연계)</h2>
+            <p>2024.03 ~ 2024.06</p>
             <ul>
-                <li>실시간 음성채팅 기능 구현</li>
-                <li>회원가입/로그인 기능 구현</li>
-                <li>채팅방 생성 기능</li>
-                <li>실시간 서버 구현 -> 클라우드로 마이그레이션</li>
+                <li>LLM, RAG 기반 챗봇 프로젝트 참여</li>
+                <li>협업 프로세스 및 실무 방식 습득</li>
             </ul>
-            <div class="blackText">
-                유지 보수
-            </div>
-            <p>유지보수는 서버쪽을 주로 담당했습니다. </p>
+            <h2>K-Digital Training 수강생</h2>
+            <p>2024.01 ~ 2024.09</p>
             <ul>
-                <li>서버 유지 비용 절감을 위해 EC2에서 배포하던 프로젝트를 S3와 CloudFront를 활용하여 배포</li>
+                <li>Java, Spring Boot, Docker, AWS, React 등 학습</li>
+                <li>실시간 음성채팅 프로젝트 진행 (AWS EC2, Docker 활용)</li>
+                <li>비용 절감 위해 EC2에서 S3+CloudFront로 마이그레이션</li>
             </ul>
-        </div>
-    </div>
-</div>
-<h2>🏆 AWARDS</h2>
-<div class="awardsContainer">
-    <div class="awardsContainer1">
-        <div class="leftContent">
-            <div class="grayText">
-                2021.07
-            </div>
-            <div class="blackText">
-                수상경력1
-            </div>
-            <div class="grayText">
-                회사이름
-            </div>
-        </div>
-        <div class="rightContent">
-            <p>수상경력 세부내용.</p>
-        </div>
-    </div>
-    <div class="awardsContainer2">
-        <div class="leftContent">
-            <div class="grayText">
-                2021.07
-            </div>
-            <div class="blackText">
-                수상경력2
-            </div>
-            <div class="grayText">
-                회사이름
-            </div>
-        </div>
-        <div class="rightContent">
-            <p>수상경력 세부내용.2222222</p>
-        </div>
-    </div>
-</div>
-<h2>🛠 PROJECT</h2>
-<div class="projectsContainer">
-    <h2>팀 프로젝트</h2>
-    <div class="teamprojectsContainer">
-        <div>
-            <!-- 추가할 팀 프로젝트 항목 -->
-            <a href="https://github.com/think0507/botox_front" class="projectItem">
-                <img src="img/botox.png" alt="Project Image" class="projectImage">
-                <div class="projectInfo">
-                    <span class="projectDate grayText">2022-01 - 2022-04</span>
-                    <h3 class="projectTitle blackText">Botox</h3>
-                    <div class="projectLanguages">
-                        <div class="icon greenicon">
-                            <i class="fa-brands fa-react"></i> React
-                        </div>
-                        <div class="icon blueicon">
-                            <i class="fa-solid fa-database"></i> MySQL
-                        </div>
-                        <div class="icon yellowicon">
-                            <i class="fa-brands fa-docker"></i> Docker
-                        </div>
-                        <div class="icon yellowicon">
-                            <i class="fa-brands fa-aws"></i> AWS S3
-                        </div>
+        </section>
 
+        <!-- (4) AWARDS (일반 섹션) -->
+        <section id="awards" class="contentSection">
+            <h1>AWARDS</h1>
+            <hr>
+            <div>
+                <p><strong>수상경력1 (2021.07)</strong> - 회사이름</p>
+                <p>수상경력 내용</p>
+                <p><strong>수상경력2 (2021.07)</strong> - 회사이름</p>
+                <p>수상경력 내용2222222</p>
+            </div>
+        </section>
 
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div>
-            <!-- 추가할 팀 프로젝트 항목 -->
-            <a href="https://github.com/Julienjang/rn-pet" class="projectItem">
-                <img src="img/dogcat.jpeg" alt="Project Image" class="projectImage">
-                <div class="projectInfo">
-                    <span class="projectDate grayText">2022-01 - 2022-04</span>
-                    <h3 class="projectTitle blackText">멍냥이의 한끼 연구소</h3>
-                    <div class="projectLanguages">
-                        <div class="icon greenicon">
-                            <i class="fa-brands fa-react"></i> ReactNative
-                        </div>
-                        <div class="icon yellowicon">
-                            <i class="fa-brands fa-android"></i> Android Studio
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div>
-            <!-- 추가할 팀 프로젝트 항목 -->
-            <a href="https://github.com/think0507/Algorithm_Study" class="projectItem">
-                <img src="img/boj.png" alt="Project Image" class="projectImage">
-                <div class="projectInfo">
-                    <span class="projectDate grayText">2022-01 - 2022-04</span>
-                    <h3 class="projectTitle blackText">알고리즘 스터디</h3>
-                    <div class="projectLanguages">
-                        <div class="icon redicon">
-                            <i class="fa-brands fa-python"></i> Python
-                        </div>
-                        <div class="icon redicon">
-                            <i class="fa-brands fa-java"></i> Java
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div>
-            <!-- 추가할 팀 프로젝트 항목 -->
-            <a href="https://github.com/think0507/Mobile-Calendar" class="projectItem">
-                <img src="img/mope.png" alt="Project Image" class="projectImage">
-                <div class="projectInfo">
-                    <span class="projectDate grayText">2022-01 - 2022-04</span>
-                    <h3 class="projectTitle blackText">벌칙 캘린더</h3>
-                    <div class="projectLanguages">
-                        <div class="icon yellowicon">
-                            <i class="fa-brands fa-android"></i> Android Studio
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <h2>개인 프로젝트</h2>
-    <div class="soloProjectContainer">
-        <div>
-            <a href="https://github.com/think0507/SYUAI" class="projectItem">
-                <img src="img/streamlit.jpeg" alt="Project Image" class="projectImage">
-                <div class="projectInfo">
-                    <span class="projectDate grayText">2022-01 - 2022-04</span>
-                    <h3 class="projectTitle blackText">SYUAI</h3>
-                    <div class="projectLanguages">
-                        <div class="icon redicon">
-                            <i class="fa-brands fa-python"></i> Python
-                        </div>
-                        <div class="icon yellowicon">
-                            <i class="fa-brands fa-google-drive"></i> Google AI
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="https://github.com/think0507/pokemoncharactergame" class="projectItem">
-                <img src="img/pokemon.webp" alt="Project Image" class="projectImage">
-                <div class="projectInfo">
-                    <span class="projectDate grayText">2022-01 - 2022-04</span>
-                    <h3 class="projectTitle blackText">객체지향 포켓몬</h3>
-                    <div class="projectLanguages">
-                        <div class="icon redicon">
-                            <i class="fa-brands fa-java"></i> Java
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="https://github.com/think0507/ps42-8rc-hackintosh" class="projectItem">
-                <img src="img/hackintosh.png" alt="Project Image" class="projectImage">
-                <div class="projectInfo">
-                    <span class="projectDate grayText">2024-05 - 2024-06</span>
-                    <h3 class="projectTitle blackText">해킨토시</h3>
-                    <div class="projectLanguages">
-                        <div class="icon redicon">
-                            <i class="fa-brands fa-apple"></i> Apple
-                        </div>
-                        <div class="icon redicon">
-                            <i class="fa-brands fa-windows"></i> Windows
-                        </div>
-                        <div class="icon blueicon">
-                            <i class="fa-solid fa-microchip"></i> Intel
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<div class="othersContainer">
+        <!-- (5) PROJECTS (일반 섹션) -->
+        <section id="projects" class="contentSection">
+            <h1>PROJECTS</h1>
+            <hr>
+            <h2>팀 프로젝트</h2>
+            <p>Botox, 멍냥이의 한끼 연구소, 알고리즘 스터디, 벌칙 캘린더 등 다양한 팀 프로젝트 수행</p>
+            <h2>개인 프로젝트</h2>
+            <p>SYUAI, 객체지향 포켓몬, 해킨토시 등 다양한 개인 프로젝트 수행</p>
+        </section>
+
+        <!-- (6) OTHERS (일반 섹션) -->
+        <section id="others" class="contentSection">
+            <h1>OTHERS</h1>
+            <hr>
+            <h2>Conference & Seminar</h2>
+            <p>AWS Summit 2023 참석 (2023.05.03) - AWS HealthScribe 등 AI 관련 기술 탐색</p>
+            <h2>자격증 (Certificate)</h2>
+            <ul>
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>AWS Certified Solutions Architect – Associate</li>
+                <li>정보처리기사</li>
+            </ul>
+        </section>
+
+        <!-- (7) CONTACT (세로/가로 중앙정렬 적용 예시) -->
+        <section id="contact" class="contentSection centerScreen">
+            <h1>CONTACT</h1>
+            <hr>
+            <p>Email: <strong>think0507@naver.com</strong></p>
+            <p>Instagram: <strong>d_ryeol57</strong></p>
+            <p>Github: <strong>https://github.com/think0507</strong></p>
+            <p>Notion: <strong>https://www.notion.so/63f861c017594f2e889792d289216d39</strong></p>
+        </section>
+
+    </main>
 </div>
 
-<h2>👀 OTHERS</h2>
-<h3>Conference & Seminar</h3>
-<div class="skillsContainer">
-    <div class="skillsContainer1">
-        <div class="leftContent">
-            <div class="blackText">
-                AWS Summit 2023
-            </div>
-            <div class="grayText">
-                2023.05.03
-            </div>
-        </div>
-        <div class="rightContent">
-            <p>AWS Summit 2023에서는 다양한 혁신 기술과 서비스가 발표되었습니다. 저는 운이 좋게 세미나에 참석하게 되면서, 여러가지 강연들을 들을 수 있었습니다.
-            AWS HealthScribe라는 기술이 특히 인상깊었는데, AI를 통해 임상기록을 생성할 수 있는 기술입니다. AWS가 단순 컴퓨팅 서비스가 아닌, 다양한 분야에서 사용할 수 있다는 것을 알게된 것이 제 진로에 영향을 끼쳤습니다.</p>
-        </div>
-    </div>
-    <div class="skillsContainer2">
-        <div class="leftContent">
-            <div class="blackText">
-                2020.01.15
-            </div>
-            <div class="grayText">
-                2020.01.15
-            </div>
-        </div>
-        <div class="rightContent">
-            <p>컨퍼런스, 세미나 경험에 대한 내용 삽입</p>
-        </div>
-    </div>
-    <div class="skillsContainer3">
-        <div class="leftContent">
-            <div class="blackText">
-                2018.11.23
-            </div>
-            <div class="grayText">
-                2020.01.15
-            </div>
-        </div>
-        <div class="rightContent">
-            <p>컨퍼런스, 세미나 경험에 대한 내용 삽입</p>
-        </div>
-    </div>
-</div>
-<h3>대외활동</h3>
-<div class="skillsContainer">
-    <div class="skillsContainer1">
-        <div class="leftContent">
-            <div class="grayText">
-                2019-1학기, 2019-2학기
-            </div>
-            <div class="blackText">
-                대외활동
-            </div>
-            <div class="grayText">
-                운영진
-            </div>
-        </div>
-        <div class="rightContent">
-            <p>대외활동을 했습니다.
-            </p>
-        </div>
-    </div>
-</div>
-
-<h3>교내활동</h3>
-<div class="skillsContainer">
-    <div class="skillsContainer1">
-        <div class="leftContent">
-            <div class="grayText">
-                2019-1학기
-            </div>
-            <div class="blackText">
-                YAHAIT[코딩 동아리]
-            </div>
-            <div class="grayText">
-                동아리원
-            </div>
-        </div>
-        <div class="rightContent">
-            <p>YAHAIT은 삼육대학교 컴퓨터 공학과 동아리입니다. 각 언어별 운영진들이 해당 부서의 학생들에게 프로그래밍을 가르쳐 주며, 과제를 주고 스터디 했습니다. 1학년때 처음 코딩을 접하게 되면서 기초부터 튼튼하게 쌓을 수 있는 기회가 되었습니다. PHP를 배우면서 웹에 대한 전반적인 흐름을 알게 되었습니다.</p>
-        </div>
-    </div>
-    <div class="skillsContainer1">
-        <div class="leftContent">
-            <div class="grayText">
-                2019-2학기
-            </div>
-            <div class="blackText">
-                치어리딩
-            </div>
-            <div class="grayText">
-                단원
-            </div>
-        </div>
-        <div class="rightContent">
-            <p>삼육대학교의 대표적인 동아리인 치어리딩 동아리 활동을 했습니다. 컴퓨터공학과 과 치어리딩 활동을 하면서 사람들과 소통하는법, 최선을 다하는법에 대해서 배웠습니다. 그결과 교내대회에서 수상할 수 있었습니다.</p>
-            <a href="https://youtu.be/BpUHs4Venqo?feature=shared"><i class="fa-brands fa-youtube"></i>유튜브 링크</a>
-        </div>
-    </div>
-    <div class="skillsContainer1">
-        <div class="leftContent">
-            <div class="grayText">
-                2023-1학기
-            </div>
-            <div class="blackText">
-                ADIOS
-            </div>
-            <div class="grayText">
-                회장
-            </div>
-        </div>
-        <div class="rightContent">
-            <p>삼육대학교 중앙 동아리 ADIOS 3기 회장을 맡았습니다. </p>
-            <a href="https://www.youtube.com/watch?v=ljMJJITEdjs"><i class="fa-brands fa-youtube"></i>유튜브 링크</a>
-        </div>
-    </div>
-
-</div>
 </body>
 </html>
