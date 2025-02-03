@@ -3,56 +3,70 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Single Page Portfolio with Smooth Scroll & Centered Sections</title>
-    <!-- Pretendard 폰트 CDN -->
-    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet" type="text/css">
-    <!-- 외부 CSS -->
+    <title>Single Page Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <!-- 왼쪽 사이드바 -->
     <nav class="sidebar">
         <ul>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#education">EDUCATION</a></li>
-            <li><a href="#career">CAREER</a></li>
-            <li><a href="#awards">AWARDS</a></li>
+            <li><a href="#certificate">CERTIFICATE</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
             <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#others">OTHERS</a></li>
+            <li><a href="#awards">AWARDS</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
 
-    <!-- 메인 콘텐츠 영역 -->
     <main class="mainContent">
-
-        <!-- (1) ABOUT 섹션 (세로/가로 중앙정렬 적용) -->
         <section id="about" class="contentSection centerScreen">
             <h1>ABOUT ME</h1>
-            <img class="round-img" src="img/profile.png" alt="" style="width:240px; height: 240px;">
+            <img class="round-img" src="img/profile.png" alt="Profile">
             <h1>“하나를 하더라도 완벽하게”</h1>
             <p>
-                안녕하세요,<strong>철저함과 끊임없는 학습 의지로</strong> 성장해온 클라우드 엔지니어 <strong>백동렬</strong>입니다.<br>
-                쌓아온 경험과 실전 경험을 바탕으로 다양한 도전에 당당히 맞서며, 항상 최고의 결과를 만들어내겠습니다.<br>
-                앞으로도 발전을 멈추지 않고, 업계에서 신뢰받는 클라우드 엔지니어로 자리매김하겠습니다.
+                안녕하세요, <strong>철저함과 끊임없는 학습 의지</strong>로 성장해온 클라우드 엔지니어 <strong>백동렬</strong>입니다.<br>
+                실전 경험을 바탕으로 다양한 도전에 당당히 맞서며 최고의 결과를 만들어내겠습니다.<br>
+                지속적인 발전을 통해 신뢰받는 클라우드 엔지니어가 되겠습니다.
             </p>
         </section>
 
-        <!-- (2) EDUCATION (일반 섹션, 수직 스크롤) -->
         <section id="education" class="contentSection centerLeft">
             <h1>EDUCATION</h1>
             <hr>
-            <div>
-                <p><strong>삼육대학교 컴퓨터공학과 (2019~ )</strong></p>
-                <p>- 전공 GPA: 3.7 / 4.5</p>
-            </div>
+            <p><strong>K-Digital Training (2024.1 ~ 2024.9)</strong></p>
+            <p>자바 스프링 리액트로 완성하는 클라우드 활용 풀스택 개발 (수료)</p>
+
+            <p><strong>삼육대학교 컴퓨터공학과 (2019 ~ 2025)</strong></p>
+            <p>학점: 3.7 / 4.5 (졸업 예정)</p>
+
+            <p><strong>흥진 고등학교 (2016 ~ 2019)</strong></p>
+            <p>자연계열 이과 (졸업)</p>
         </section>
 
-        <!-- (3) CAREER (일반 섹션) -->
-        <section id="career" class="contentSection">
-            <h1>CAREER</h1>
+        <section id="certificate" class="contentSection">
+            <h1>AWS Certified Solutions Architect – Associate</h1>
+            <h2>Amazon Web Services</h2>
+            <p>22 November 2024</p>
+
+            <h1>정보처리기사</h1>
+            <h2>한국산업인력공단</h2>
+            <p>실기 예정</p>
+
+            <h1>리눅스마스터 2급</h1>
+            <h2>한국정보통신진흥협회</h2>
+            <p>실기 예정</p>
+
+            <h1>초경량 비행장치 조종사</h1>
+            <h2>한국교통안전공단</h2>
+            <p>18 January 2019</p>
+        </section>
+
+        <section id="experience" class="contentSection">
+            <h1>EXPERIENCE</h1>
             <hr>
             <h2>에이아이톡 (산학연계)</h2>
             <p>2024.03 ~ 2024.06</p>
@@ -60,52 +74,55 @@
                 <li>LLM, RAG 기반 챗봇 프로젝트 참여</li>
                 <li>협업 프로세스 및 실무 방식 습득</li>
             </ul>
-            <h2>K-Digital Training 수강생</h2>
+
+            <h2>K-Digital Training</h2>
             <p>2024.01 ~ 2024.09</p>
             <ul>
-                <li>Java, Spring Boot, Docker, AWS, React 등 학습</li>
-                <li>실시간 음성채팅 프로젝트 진행 (AWS EC2, Docker 활용)</li>
-                <li>비용 절감 위해 EC2에서 S3+CloudFront로 마이그레이션</li>
+                <li>Java, Spring Boot, Docker, AWS, React 학습</li>
+                <li>실시간 음성채팅 프로젝트 (AWS EC2, Docker 활용)</li>
+                <li>비용 절감을 위해 EC2에서 S3+CloudFront로 마이그레이션</li>
             </ul>
         </section>
 
-        <!-- (4) AWARDS (일반 섹션) -->
-        <section id="awards" class="contentSection">
-            <h1>AWARDS</h1>
-            <hr>
-            <div>
-                <p><strong>수상경력1 (2021.07)</strong> - 회사이름</p>
-                <p>수상경력 내용</p>
-                <p><strong>수상경력2 (2021.07)</strong> - 회사이름</p>
-                <p>수상경력 내용2222222</p>
-            </div>
-        </section>
 
-        <!-- (5) PROJECTS (일반 섹션) -->
+
         <section id="projects" class="contentSection">
             <h1>PROJECTS</h1>
             <hr>
-            <h2>팀 프로젝트</h2>
-            <p>Botox, 멍냥이의 한끼 연구소, 알고리즘 스터디, 벌칙 캘린더 등 다양한 팀 프로젝트 수행</p>
-            <h2>개인 프로젝트</h2>
-            <p>SYUAI, 객체지향 포켓몬, 해킨토시 등 다양한 개인 프로젝트 수행</p>
+            <section id="botox" class="contentSection">
+                <iframe src="botox.html" width="100%" height="800px" frameborder="0"></iframe>
+            </section>
+            <section id="livescore" class="contentSection">
+                <iframe src="livescore.html" width="100%" height="800px" frameborder="0"></iframe>
+            </section>
         </section>
 
-        <!-- (6) OTHERS (일반 섹션) -->
-        <section id="others" class="contentSection">
-            <h1>OTHERS</h1>
+
+
+
+        <section id="awards" class="contentSection">
+            <h1>AWARDS</h1>
             <hr>
-            <h2>Conference & Seminar</h2>
-            <p>AWS Summit 2023 참석 (2023.05.03) - AWS HealthScribe 등 AI 관련 기술 탐색</p>
-            <h2>자격증 (Certificate)</h2>
-            <ul>
-                <li>AWS Certified Cloud Practitioner</li>
-                <li>AWS Certified Solutions Architect – Associate</li>
-                <li>정보처리기사</li>
-            </ul>
+
+            <h2>🏆 수상내용 🏆</h2>
+
+            <div class="award-item">
+                <h3>라이브 스코어 (Live Score)</h3>
+                <p><strong>🏅 한국정보교육원 입상</strong></p>
+                <p>라이브 스트리밍 & 라이브 채팅 기능을 가진 <strong>체육대회 정보 공유 서비스</strong></p>
+            </div>
+
+            <hr>
+
+            <div class="award-item">
+                <h3>BOTOX - 실시간 음성 채팅 플랫폼</h3>
+                <p><strong>🏅 한국정보교육원 입상</strong></p>
+                <p>게이머들을 위한 <strong>실시간 음성 채팅 플랫폼</strong></p>
+            </div>
+
         </section>
 
-        <!-- (7) CONTACT (세로/가로 중앙정렬 적용 예시) -->
+
         <section id="contact" class="contentSection centerScreen">
             <h1>CONTACT</h1>
             <hr>
@@ -114,7 +131,6 @@
             <p>Github: <strong>https://github.com/think0507</strong></p>
             <p>Notion: <strong>https://www.notion.so/63f861c017594f2e889792d289216d39</strong></p>
         </section>
-
     </main>
 </div>
 
