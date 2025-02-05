@@ -127,15 +127,16 @@ body {
 }
 
 /* ========== 4) 특정 섹션 중앙정렬 (세로+가로) ========== */
+/* centerScreen 수정: 세로 정렬 유지하면서 기존 flex-row 영향 없도록 변경 */
 .centerScreen {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* 기존 flex-row 구조를 유지하려면 column */
     justify-content: center;
     align-items: center;
-    height: 100vh;
     text-align: center;
-    border-bottom: 1px solid #eee;
+    min-height: 100vh; /* 너무 커지지 않도록 조절 */
 }
+
 
 .centerLeft {
     display: flex;
@@ -180,7 +181,7 @@ body {
 .flex-title {
     font-size: 2.0rem !important;
     font-weight: 700 !important;
-    color: #5f2eea !important; /* 강조 색상 */
+    color: #5e3da1 !important; /* 강조 색상 */
 }
 
 .flex-subtitle {
@@ -192,7 +193,7 @@ body {
 .flex-date {
     font-size: 1rem !important;
     font-weight: 600 !important;
-    color: #7c3aed !important; /* 강조 색상 */
+    color: #310380 !important; /* 강조 색상 */
     text-align: right !important;
     min-width: 200px !important; /* 일정한 간격 유지 */
 }
@@ -203,6 +204,38 @@ body {
     margin-top: 25px !important; /* 기존보다 여백 증가 */
 }
 
+
+#education .flex-title {
+    font-size: 2.0rem !important;
+    font-weight: 700 !important;
+    color: #5e3da1 !important; /* 강조 색상 */
+}
+
+#education .flex-subtitle {
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    color: #444 !important; /* 기존보다 조금 더 짙은 색상 */
+}
+
+#education .flex-date {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: #310380 !important; /* 강조 색상 */
+    text-align: right !important;
+    min-width: 200px !important; /* 일정한 간격 유지 */
+}
+/* 자격증과 교육 섹션 안의 flex-row는 좌우 정렬 유지 */
+#certificate .flex-row,
+#education .flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    gap: 15px;
+    width: 100%; /* centerScreen 영향 받지 않도록 */
+    max-width: 800px;
+}
 
 /* ========== 6) 반응형 ========== */
 @media (max-width: 768px) {
