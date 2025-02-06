@@ -204,6 +204,30 @@ body {
     margin-top: 25px !important; /* 기존보다 여백 증가 */
 }
 
+/* 경험 섹션 헤더 정렬 */
+.experience-header {
+    display: flex;
+    justify-content: space-between; /* 좌우 정렬 */
+    align-items: baseline;
+}
+
+/* 제목 스타일 */
+.experience-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #5f2eea;
+    margin: 0;
+}
+
+/* 날짜 스타일 */
+.experience-date {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    text-align: right;
+    min-width: 150px; /* 일정한 너비 유지 */
+}
+
 
 #education .flex-title {
     font-size: 2.0rem !important;

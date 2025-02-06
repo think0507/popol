@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ArtFusion - 실시간 커뮤니케이션 및 콘텐츠 공유 플랫폼</title>
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="contentSection">
+    <h1>ArtFusion - AI 웹툰 창작 및 콘텐츠 공유 플랫폼</h1>
+
+    <div class="video-container">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="ArtFusion 프로젝트 시연 영상" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+
+    <!-- 프로젝트 소개 -->
+    <h2>프로젝트 소개</h2>
+    <p>
+        ArtFusion은 <strong>웹툰 창작 및 콘텐츠 공유 플랫폼</strong>으로,
+        사용자가 텍스트 및 음성 채팅을 통해 프롬프트를 작성하면, AI 기반 웹툰을 생성, 공유할 수 있도록 설계되었습니다.
+    </p>
+    <p>
+        프로젝트는 AWS 기반의 클라우드 인프라와 Spring Boot + Next.js를 활용하여 구현되었습니다.<br>
+        Docker + Nginx + AWS EC2를 활용한 Blue-Green Deployment를 통해 무중단 배포 환경을 구축하고,
+        WebRTC를 통한 실시간 음성 및 채팅 기능을 제공하여 강력한 커뮤니케이션 기능을 지원합니다.
+    </p>
+
+    <hr>
+
+    <!-- 구현 내용 -->
+    <h2>구현 내용</h2>
+    <ul>
+        <li>Spring Boot + Next.js 기반의 풀스택 웹 애플리케이션 개발</li>
+        <li>JWT 기반 사용자 인증 및 보안 기능 적용</li>
+        <li>WebRTC를 활용한 실시간 음성 및 채팅 기능 구현</li>
+        <li>Redis 캐싱을 활용한 성능 최적화 및 데이터베이스 부하 감소</li>
+        <li>AWS S3를 활용한 파일 업로드 및 관리</li>
+        <li>Docker + Nginx + AWS EC2 배포 및 Blue-Green Deployment 적용</li>
+        <li>CI/CD 구축 (Bitbucket + DockerHub)</li>
+    </ul>
+
+    <p>
+        ArtFusion은 <strong>사용자 경험을 최적화</strong>하기 위해 Redis 캐싱을 적용하여 응답 속도를 개선하고,
+        JWT 인증을 활용하여 보안성을 강화했습니다.<br>
+        AWS S3를 활용한 파일 업로드 관리, WebRTC 기반 음성 채팅, CI/CD 자동화를 통해 지속적인 배포 및 운영 효율성을 극대화했습니다.<br>
+    </p>
+
+    <hr>
+
+    <!-- 주요 기술 스택 -->
+    <h2>주요 기술 스택</h2>
+    <ul>
+        <li><strong>프론트엔드:</strong> Next.js, React, Tailwind CSS</li>
+        <li><strong>백엔드:</strong> Spring Boot, MySQL, Redis</li>
+        <li><strong>실시간 기능:</strong> WebRTC, WebSocket</li>
+        <li><strong>배포 및 인프라:</strong> Docker, Nginx, AWS EC2, S3, CloudFront</li>
+        <li><strong>보안 및 인증:</strong> Spring Security, JWT, Redis 세션 관리</li>
+        <li><strong>CI/CD:</strong> Bitbucket + DockerHub 기반 자동 배포</li>
+        <li><strong>로그 및 모니터링:</strong> Prometheus + Grafana 또는 CloudWatch 고려</li>
+    </ul>
+
+    <hr>
+
+    <!-- 프로젝트 성과 -->
+    <h2>프로젝트 성과</h2>
+    <ul>
+        <li>Blue-Green Deployment를 활용한 무중단 배포 환경 구축</li>
+        <li>WebRTC 기반 실시간 음성 및 채팅 기능 개발</li>
+        <li>Redis 캐싱을 통해 응답 속도 개선 및 데이터베이스 부하 감소</li>
+        <li>Nginx 리버스 프록시 설정을 통한 트래픽 관리 최적화</li>
+        <li>CI/CD 자동화 구축으로 운영 및 배포 프로세스 효율화</li>
+    </ul>
+
+</section>
+
+</body>
+</html>
